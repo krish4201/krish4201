@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishnakumar R Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #23243a;
+      color: #f9f9f9;
+    }
+    header {
+      background: linear-gradient(90deg, #5941a9 70%, #1e275b 100%);
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+    }
+    header p {
+      margin: 0.5rem 0 1rem;
+      font-size: 1.3rem;
+    }
+    .contact {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+    }
+    .contact a {
+      color: #ffd371;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .contact a:hover {
+      color: #fff3c4;
+    }
+    main {
+      max-width: 820px;
+      margin: 2rem auto;
+      background: #262866;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #41388f;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #ffd371;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .project-card {
+      background: #17184c;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp .8s forwards;
+      animation-delay: var(--delay, 0s);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #62b7f4;
+      font-size: 1.15rem;
+    }
+    ul {
+      line-height: 2;
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      list-style: none;
+      padding-left: 0;
+    }
+    .skills li {
+      background: #342c70;
+      border-radius: 6px;
+      padding: 0.7rem 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp .7s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 1rem;
+      }
+      .skills ul {
+        flex-direction: column;
+        gap: .5rem;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0 0.7rem 0;
+      background: #17184c;
+      font-size: 1rem;
+      color: #fafafa;
+      border-radius: 0 0 14px 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container fade-in">
+      <h1>Krishnakumar R</h1>
+      <p>Software Engineer | Python, Java, MERN Stack</p>
+      <ul class="contact">
+        <li>📞 <a href="tel:+919514755283">+91 9514755283</a></li>
+        <li>📧 <a href="mailto:rkkramesh2001@gmail.com">rkkramesh2001@gmail.com</a></li>
+        <li><a href="https://linkedin.com/in/krishnakumar-r">LinkedIn</a></li>
+        <li><a href="https://github.com/krish4201">GitHub</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <main>
+    <section class="objective fade-in">
+      <h2>Objective</h2>
+      <p>Software Engineer with experience in Python, Java, and MERN stack development. Skilled in REST APIs, database-driven applications, and IoT systems. Proficient in API testing, MySQL, MongoDB, and strong data structures & algorithms foundation.</p>
+    </section>
+
+    <section class="projects fade-in">
+      <h2>Projects</h2>
+      <div class="project-card" style="--delay:0s">
+        <h3>QoS Aware Adaptive Multipath Selection Algorithm using ML</h3>
+        <ul>
+          <li>92.31% accuracy with Random Forest (F1: 0.92) on UNICAUCA 2019 dataset</li>
+          <li>Real-time traffic classification and adaptive multipath routing with Ryu SDN controller</li>
+          <li>Reduced packet loss from 10.6% to 0%, latency &le;150ms, throughput: 10 Mbps</li>
+        </ul>
+      </div>
+      <div class="project-card" style="--delay:.15s">
+        <h3>IOT-Based Agriculture System</h3>
+        <ul>
+          <li>Real-time monitoring and irrigation control with latency reduced by 30%</li>
+          <li>React.js dashboard & MongoDB backend for data visualization</li>
+          <li>Multi-sensor deployment for centralized data collection</li>
+        </ul>
+      </div>
+      <div class="project-card" style="--delay:.3s">
+        <h3>University Leave Approval System (MERN Stack)</h3>
+        <ul>
+          <li>Automated leave approvals for faculty, HoDs, and deans</li>
+          <li>REST APIs with role-based workflow automation</li>
+          <li>Responsive interface for desktop & mobile</li>
+        </ul>
+      </div>
+      <div class="project-card" style="--delay:.45s">
+        <h3>Hand Gesture Controlled Robot with Robotic Arm (Embedded Python)</h3>
+        <ul>
+          <li>Built a gesture-controlled robotic arm & robot</li>
+          <li>Embedded Python for real-time control</li>
+          <li>Applications in healthcare, manufacturing, entertainment</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills fade-in">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Java, Python, JavaScript</li>
+        <li><strong>Web:</strong> MERN Stack, HTML5, CSS3</li>
+        <li><strong>APIs:</strong> REST API, Postman</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB</li>
+        <li><strong>Core:</strong> Data Structures, Networking, Embedded Systems</li>
+        <li><strong>Tools:</strong> Git, VS Code, Eclipse IDE</li>
+      </ul>
+    </section>
+
+    <section class="education fade-in">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>M.Tech (Computer Science and Engineering)</strong> – Amrita Vishwa Vidyapeethan, Coimbatore (2023 - 2025)<br>CGPA: 6.84</li>
+        <li><strong>B.E (Electronics & Communication Engineering)</strong> – Hindusthan College of Engineering & Technology, Coimbatore (2019 - 2023)<br>CGPA: 8.02</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Krishnakumar R</p>
+  </footer>
+  <script>
+    // Fade-in animation on scroll for the fade-in sections (main sections)
+    document.addEventListener("DOMContentLoaded", () => {
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -20px 0px" };
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("appear");
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+      faders.forEach(el => {
+        appearOnScroll.observe(el);
+      });
+
+      // Animate project cards with delay
+      const projectCards = document.querySelectorAll('.project-card');
+      projectCards.forEach((card, idx) => {
+        card.style.animationDelay = card.style.getPropertyValue('--delay') || `${idx * 0.15}s`;
+      });
+    });
+  </script>
+</body>
+</html>
